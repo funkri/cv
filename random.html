@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Random</title>
+  <link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/oreoandeeyore/images/e/e3/K-1.png/revision/latest?cb=20200906230936">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="random.html">Random</a></li>
+</ul>
+
+<h1>Random</h1>
+<p>This page is for testing out simple functions in html and CSS.</p>
+
+<a class="bookmark" href="#htmlbookmarks">This is a bookmark</a>
+
+<h2>Classes</h2>
+<p>In my html coding I can declare classes which have differing formats defined in CSS.<br>I will try to create a few different classes to practice below.<br>Useful classes might be a "Useful tip" or "Did you know?" type section; a class for long quotes; and so on.</p>
+
+<div class="tip">
+  <h4>Sweet & Savoury</h4>
+  <p>When cooking something sweet, always add a small pinch of salt.<br>Savoury dishes should also have a pinch of sugar.<br>This adds balance to the flavours of the dishes.</p>
+</div>
+
+<p>This paragraph contains some words or phrases that are more important than others. These may be emphasized by giving them a class using the <span class="emphasis">span-command</span> with a <span class="emphasis">class identifier</span>. This way I may refer to this class in my CSS-document, and quickly change the way I show emphasis throughout my entire page.</p>
+
+<h4 id="idheader">id header</h4>
+<p>id is used to style specific html elements. It is similar to classes, but only for one element on a page.</p>
+
+<p><iframe src="https://giphy.com/embed/L8K62iTDkzGX6" width="480" height="307" frameBorder="0" style="border:2px solid black" class="giphy-embed" allowFullScreen title="Web development gif"></iframe></p>
+
+<h4 id="htmlbookmarks">HTML bookmarks with id and links</h4>
+<p>With a long page it might be useful to be able to jump down to a specific section without having to scroll. Create a bookmark by giving this section's heading an id. Then you create a link that refers to this id.</p>
+
+<h2>HTML Javascript</h2>
+
+<p>I can use Javascript to change content, styles, and attributes. 
+
+<h4>1. Use JavaScript to change text</h4>
+
+<p>This example uses Javascript to write insert writing into an HTML element with id="demo":</p>
+
+<p>This is where the phrase will appear:<p id="demo"></p></p>
+
+<script>
+document.getElementById("demo").innerHTML = "PHRASE";
+</script> 
+
+<h4>2. Use Javascript to change styles</h4>
+
+<script>
+function myFunction() {
+  document.getElementById("demostyle").style.fontSize = "30px"; 
+  document.getElementById("demostyle").style.color = "rgb(255 165 52)";
+  document.getElementById("demostyle").style.backgroundColor = "white";        
+}
+function myFunction2() {
+  document.getElementById("demostyle").style.fontSize = "20px";
+  document.getElementById("demostyle").style.color = "black";
+  document.getElementById("demostyle").style.backgroundColor = "";
+}
+</script>
+
+<p id="demostyle">Click the left button to change the style of this paragraph. Click the right button to change it back.</p>
+
+<p><button type="button" onclick="myFunction()">Click me</button><button type="button" onclick="myFunction2()">Click me</button></p>
+
+<h4>3. Use Javascript to change attributes</h4>
+
+<p>I can change the source attribute of an image</p>
+
+<script>
+function smile(sm) {
+  var pic;
+  if (sm == 0) {
+    pic = "https://1.bp.blogspot.com/-hw33YfeU2gg/VuOR8JVMxUI/AAAAAAAAMAo/l_W-kOh7CO4ixEsaWeML8FB4EpJ_xZoZA/s1600/Smiley-Green-rating.jpg"
+  } else {
+    pic = "https://3.bp.blogspot.com/-2Q4mCe03fEg/VuOR92Jk6bI/AAAAAAAAMAw/YCY_ej--zEoSybT_PseTp6p0-G7Y-kGfw/s1600/Smiley-Red-rating.jpg"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<p><img id="myImage" src="https://3.bp.blogspot.com/-2Q4mCe03fEg/VuOR92Jk6bI/AAAAAAAAMAw/YCY_ej--zEoSybT_PseTp6p0-G7Y-kGfw/s1600/Smiley-Red-rating.jpg" width="200" height="200" border="2px solid black"></p>
+
+<p>
+<button type="button" onclick="smile(0)">Smile</button>
+<button type="button" onclick="smile(1)">Frown</button>
+</p>
+
+<h4>4. If the user's browser does not support Javascript</h4>
+
+<p>I use the noscript-prompt to display a gif to users whose browser cannot display Javascript.</p>
+
+<noscript><iframe src="https://giphy.com/embed/10XiFYfOhhFxjW" width="480" height="276" frameBorder="0" class="giphy-embed" allowFullScreen style="border: 2px solid black"></iframe></noscript>
+
+<h2>File paths</h2>
+
+<p>
+<img src="cat1.png" alt=cat 1 height="100px" style="border: 2px solid black">
+<img src="images/cat2.png" alt="cat 2" height="100px" style="border: 2px solid black">
+<img src="../images/cat3.png" alt="cat 3" height="100px" style="border: 2px solid black">
+<img src="/images/kjokken.png" alt=kjokken height="100px" style="border: 2px solid black">
+</p>
+
+<!-- 1. Bilde i samme mappe 2. Bilde lagret i "pics"-mappe inne i samme mappe 3. Bilde lagret i separat mappe som er i samme mappe som mappen med html-filene 4. "the file path points to a file in the images folder located at the root of the current web"= skjønner ikke helt hva det betyr.. -->
+
+<!--
+<h2>HTML layout elements</h2>
+<p>CSS framework; CSS float property; CSS flex box; CSS grid</p>
+-->
+
+<h1 style="font-size:5vw" color="grey" font-style="italic">Responsive Text Size</h1>
+
+
+<footer>
+  <p>Author: Kristina Duna<br><a href="mailto:kristina.duna@funkweb.org">kristina.duna@funkweb.org</a></p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+body {
+  background-color: #FFDFB7
+}
+
+h1 {
+  color: "rgb(255 165 52)";
+  margin-left: 0px;
+  font-family: Montserrat, sans-serif;
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+p {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+h2 {
+  color: "rgb(255 184 95)";
+  margin-left: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  color: "rgb(255 184 95)";
+  margin-left: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+}
+
+h4 {
+  color: "rgb(255 184 95)";
+  margin-left: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+
+th {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+
+td {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black
+}
+
+a:visited {
+  text-decoration: none;
+  color: black
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black
+	
+}
+
+a:active {
+  text-decoration: underline;
+	
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: "rgb(255 184 95)";
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: "rgb(255 184 95)";
+  color: white;
+  text-decoration: none;
+}
+
+.tip {
+  background-color: white;
+  color: black;
+  border: "1px solid black";
+}
+
+.emphasis {
+  color: orange;
+  font-style: italic;
+}
+
+#idheader {
+  background-color: "rgb(255 184 95)";
+  color: white;
+  font-style: italic;
+  padding: 8px 16px;
+  margin-left: 14px;
+}
+
+.bookmark {
+  font-family: Montserrat, sans-serif;
+  margin-left: 14px;
+}
+
+linkreg:hover {
+  text-decoration: underline;
+  color: black;
+  background-colour: "";
+  padding: "";
+  margin-left: "";
+}
+
+.aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
