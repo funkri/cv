@@ -134,3 +134,12 @@ linkreg:hover {
   font-style: italic;
   background-color: lightgray;
 }
+
+hr {
+  background-color: "white";
+  border-style: dotted none none none;
+  height: 0px;
+  width: 10%;
+  border-color: black;
+  border-width: 5px
+    }
