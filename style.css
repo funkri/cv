@@ -143,3 +143,22 @@ hr {
   border-color: black;
   border-width: 5px
     }
+
+body {
+	margin: 0
+}
+
+.top {
+	margin: 0px;
+	background-color: #764225;
+	height: 100%;
+	width: 100%;
+}
+
+.middle {
+
+}
+
+.bottom {
+
+}
